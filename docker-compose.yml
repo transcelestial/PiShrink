@@ -1,0 +1,10 @@
+---
+version: '3'
+
+services:
+  pishrink:
+    build: .
+    volumes:
+      - .:/pishrink
+      - /dev:/dev
+    privileged: true
